@@ -4,11 +4,22 @@ public static class ApiEndpoints
 {
     private const string ApiBase = "/api";
     
-    public static class Users
+    public static class Organization
     {
-        private const string Base = $"{ApiBase}/users";
+        public static class Users
+        {
+            private const string UserBase = $"{ApiBase}/users";
         
-        public const string GetAll = Base;
-        public const string Create = Base;
+            public const string GetAll = UserBase;
+            public const string Create = UserBase;
+        }
+        
+        public static class UserRoles
+        {
+            private const string UserRoleBase = $"{ApiBase}/user-roles";
+        
+            public const string GetAll = UserRoleBase;
+            public const string Create = UserRoleBase;
+        }
     }
 }

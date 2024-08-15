@@ -20,7 +20,7 @@ public class ServiceCollectionExtensionsTests
         var httpClientFactory = serviceProvider.GetService<IHttpClientFactory>();
         httpClientFactory.Should().NotBeNull();
 
-        var apiClient = serviceProvider.GetService<IDotnetstoreIntranetApi>();
+        var apiClient = serviceProvider.GetService<IOrganizationDotnetstoreIntranetApi>();
         apiClient.Should().NotBeNull();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace SDK.Dto.Users.Responses;
+﻿namespace SDK.Dto.Organization.Users.Responses;
 
 public record struct UserResponse(
     Guid Id, 

@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using SDK.Dto.Users.Requests;
+using SDK.Dto.Organization.Users.Requests;
 
 namespace SDK.Test.Dto.Users.Requests;
 

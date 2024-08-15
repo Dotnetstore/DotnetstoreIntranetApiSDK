@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NSubstitute;
-using SDK.Dto.Users.Requests;
-using SDK.Dto.Users.Responses;
+using SDK.Dto.Organization.Users.Requests;
+using SDK.Dto.Organization.Users.Responses;
 
 namespace SDK.Test;
 
@@ -11,7 +11,7 @@ public class DotnetstoreIntranetApiTests
     public async Task CreateUserAsync_ShouldReturnExpectedUserResponse()
     {
         // Arrange
-        var mockApi = Substitute.For<IDotnetstoreIntranetApi>();
+        var mockApi = Substitute.For<IOrganizationDotnetstoreIntranetApi>();
         var request = new CreateUserRequest(
             "Doe",
             "John",

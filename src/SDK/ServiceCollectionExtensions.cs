@@ -10,7 +10,7 @@ public static class ServiceCollectionExtensions
         services
             .AddHttpClient()
             // .AddSingleton<AuthTokenProvider>()
-            .AddRefitClient<IDotnetstoreIntranetApi>(s => new RefitSettings
+            .AddRefitClient<IOrganizationDotnetstoreIntranetApi>(s => new RefitSettings
             {
                 // AuthorizationHeaderValueGetter = async () => await s.GetRequiredService<AuthTokenProvider>().GetTokenAsync()
             })

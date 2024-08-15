@@ -1,4 +1,4 @@
-﻿namespace SDK.Dto.Users.Requests;
+﻿namespace SDK.Dto.Organization.Users.Requests;
 
 public record struct CreateUserRequest(
     string LastName,
